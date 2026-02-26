@@ -84,10 +84,12 @@ const config = {
       },
       navbar: {
         title: '苏州知轶',
+        /*
         logo: {
           alt: 'My Site Logo',
           src: 'img/pic_logo_1333.png',
         },
+        */
         items: [
           /*
           {
