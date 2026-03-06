@@ -123,3 +123,13 @@
   font-weight: 300;
   letter-spacing: 0.04em;
 }
+
+
+
+/* 自定义文本对齐类 */
+.txt-l { text-align: left; }
+.txt-c { text-align: center; }
+.txt-r { text-align: right; }
+
+/* 首行缩进 2 字符 */
+.sj2 { text-indent: 2em; }
