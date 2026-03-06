@@ -167,7 +167,7 @@ const config = {
           </a>
           <img src="/img/Police.svg" alt="公安备案标志" style="width:18px;height:18px;
           margin-right:2px;margin-left:8px;vertical-align: -3px"/>
-         <a href="ttps://beian.mps.gov.cn/#/query/webSearch?code=32050902103224" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">
+         <a href="https://beian.mps.gov.cn/#/query/webSearch?code=32050902103224" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">
         苏公网安备32050902103224号
           </a>`,
       },
