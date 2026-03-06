@@ -2,7 +2,7 @@
 slug: 2026-01-29-how-to-sleep-well-in-winter-TCM
 title: 跟中医学冬天怎么睡觉才最补
 authors: Swen
-tags: [转载,睡眠]
+tags: [repost,sleep]
 date: 2026-01-29
 ---
 
