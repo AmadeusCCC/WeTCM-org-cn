@@ -1,8 +1,8 @@
 ---
-slug: try-sth
-title: 尝试集，并非胡适之
+slug: chengdu-travelogue-part-1-folklore-and-cuisine
+title: 锦城行记（一）：民俗和饮食
 authors: Swen
-tags: [随笔，测试]
+tags: [test, ori]
 date: 2026-01-27
 ---
 

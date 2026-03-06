@@ -24,17 +24,17 @@ ori:
   description: 本网站的原创内容
 
 repost:
-  labal: 转载
+  label: 转载
   permalink: /erpost
   description: 来自其他文章/作者的文章
 
 sleep:
-  labal: 睡眠
+  label: 睡眠
   permalink: /sleep
   description: 有关睡觉的内容
 
 test:
-  labal: 测试
+  label: 测试
   permalink: /test
   description: 测试文章
 
