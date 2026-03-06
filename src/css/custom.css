@@ -133,3 +133,18 @@
 
 /* 首行缩进 2 字符 */
 .sj2 { text-indent: 2em; }
+
+
+
+/* 放大博客/文档正文的字体大小 */
+.markdown p,
+.markdown li {
+  font-size: 1.05rem; /* 默认是 1rem (16px)，1.1rem 大约是 17.6px */
+  line-height: 1.75; /* 顺便调大一点行高，让大段文字呼吸感更强，不拥挤 */
+}
+
+/* 如果你觉得各级标题也需要跟着稍微大一点，可以取消下面这段的注释 */
+/*
+.markdown h2 { font-size: 1.75rem; }
+.markdown h3 { font-size: 1.4rem; }
+*/
