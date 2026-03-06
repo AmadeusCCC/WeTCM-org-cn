@@ -84,14 +84,13 @@ const config = {
       },
       navbar: {
         title: '苏州知轶',
-        /*
+        
         logo: {
           alt: 'My Site Logo',
           src: 'img/pic_logo_1333.png',
         },
-        */
+        
         items: [
-          /*
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
@@ -111,12 +110,10 @@ const config = {
             label: 'null',
             position: 'right',
           },
-          */
         ],
       },
       footer: {
         style: 'dark',
-        /*
         links: [
           {
             title: '文档',
@@ -158,7 +155,7 @@ const config = {
             ],
           },
         ],
-        */
+        
         copyright: `Copyright © ${new Date().getFullYear()} 苏州知轶<br>
         <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">
         <img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-sa.svg" alt="知识共享署名-相同方式共享" width="132" height="46.5" style="margin-top: 10px;" /></a><br>
@@ -167,6 +164,11 @@ const config = {
         All Rights Reserved.<br>
         <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">
             苏ICP备2024061225号-2
+          </a>
+          <img src="/img/Police.svg" alt="公安备案标志" style="width:18px;height:18px;
+          margin-right:2px;margin-left:8px;vertical-align: -3px"/>
+         <a href="ttps://beian.mps.gov.cn/#/query/webSearch?code=32050902103224" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">
+        苏公网安备32050902103224号
           </a>`,
       },
       prism: {
