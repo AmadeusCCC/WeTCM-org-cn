@@ -38,3 +38,7 @@ test:
   permalink: /test
   description: 测试文章
 
+dream:
+  label: 梦境
+  permalink: /dream
+  description: 有关做梦、梦境的内容
