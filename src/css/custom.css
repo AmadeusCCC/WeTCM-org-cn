@@ -40,17 +40,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;700&display=swap');
 
 
-/* 引入全新的 CMSFont 字体 (WOFF2 超高压缩版) */
+/* 引入全新的 CMSFont 字体 */
 @font-face {
   font-family: 'CMSFont'; 
-  /* 1. 后缀改为 .woff2 */
-  /* 2. format 改为 woff2 */
   src: url('/fonts/CMSFont-Bold.woff2') format('woff2'); 
   font-display: swap;
   font-weight: bold; 
   font-style: normal;
 }
-
+/* 以下注释为先前的字体引入，留着备用 */
 /*
 @font-face {
   font-family: 'FZBiaoYTFamily'; 
