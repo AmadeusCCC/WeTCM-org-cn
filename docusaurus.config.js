@@ -179,7 +179,9 @@ const config = {
           </a>
           协议之条款下提供，附加条款亦可能应用<br>
 
-          本站不提供任何治疗内容，如有不适请咨询您的医师<br>
+          本站不提供任何治疗内容，如有不适请咨询<a href="https://zgcx.nhc.gov.cn/doctor" target="_blank"rel="noopener noreferrer" style="color: inherit; text-decoration: none;">您的医师
+          </a>
+          <br>
 
           <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">
             苏ICP备2024061225号-2

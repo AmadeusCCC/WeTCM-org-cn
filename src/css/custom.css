@@ -158,3 +158,53 @@ img.emoji {
   vertical-align: -0.1em; /* 稍微下沉一点，确保和中文字符的基线对齐 */
   pointer-events: none; /* 防止用户不小心拖拽图片 */
 }
+
+/* =========================================
+   以下至209行均为ai调试间距的测试内容，都被注释掉了。
+   ========================================= */
+   
+/* 消除页脚版权信息中链接的额外间距 */
+/*
+.footer__copyright a {
+  margin: 0 !important;
+  padding: 0 2px; 
+  text-decoration: none;
+}
+*/
+
+/* 如果是链接列表模式，消除列表项之间的间距 */
+/*
+.footer__item {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+  */
+
+
+/* --- 修复页脚版权区超链接间隙问题 --- */
+
+/* 1. 强力清除 a 标签自带的 margin 和 padding */
+/*
+.footer__bottom .footer__copyright a {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  display: inline-block; 
+  */
+
+
+/* 2. 针对可能被渲染成列表的 Footer Links（如果是官方 links 数组配置的） *//*
+.footer__bottom .footer__links .footer__item {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+  */
+
+
+/*
+.footer__bottom .footer__links {
+  gap: 0 !important; 
+}
+
+*/
