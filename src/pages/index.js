@@ -28,7 +28,7 @@ function HomepageHeader() {
 
         {/* --- 保留你原有的“建设中”提示 --- */}
         <p style={{ fontSize: '1.8rem', margin: '1rem 0', fontWeight: 'bold' }}>
-          本站正在建设中…<br />We are under construction…
+          本站正在建设中...<br />We are under construction...
         </p>
         {/* ------------------------------- */}
 
