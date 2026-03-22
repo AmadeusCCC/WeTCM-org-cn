@@ -39,6 +39,19 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;700&display=swap');
 
+
+/* 引入全新的 CMSFont 字体 (WOFF2 超高压缩版) */
+@font-face {
+  font-family: 'CMSFont'; 
+  /* 1. 后缀改为 .woff2 */
+  /* 2. format 改为 woff2 */
+  src: url('/fonts/CMSFont-Bold.woff2') format('woff2'); 
+  font-display: swap;
+  font-weight: bold; 
+  font-style: normal;
+}
+
+/*
 @font-face {
   font-family: 'FZBiaoYTFamily'; 
   src: url('/fonts/BYT_5w.woff2') format('truetype'); 
@@ -46,6 +59,7 @@
   font-weight: normal;
   font-style: normal;
 }
+ */
 
 /* =========================================
    3. 首页 Hero 区域：高精度几何排版
@@ -59,10 +73,10 @@
   width: 100%;
 }
 
-/* 主标题：皇家太医院 */
+/* 主标题 */
 .hero__title {
-  font-family: 'FZBiaoYTFamily', serif;
-  font-weight: normal !important;
+  font-family: 'CMSFont', serif;
+  font-weight: bold !important;
   
   font-size: var(--hero-base-size);
   line-height: 1.0;
@@ -77,45 +91,29 @@
   margin-right: auto;
 }
 
-/* 副标题：Academia Medica Sinica Imperii */
+/* 副标题 */
 .hero__subtitle {
-  font-family: 'Noto Serif SC', serif;
-  font-weight: 300;
+  font-family: 'CMSFont', serif;
+  font-weight: bold !important;
   text-transform: uppercase;
-  
-  /* 几何约束 A: 字号严格为 0.6 倍 */
-  font-size: calc(var(--hero-base-size) * 0.6);
-  line-height: 1;
-
-  /* 几何约束 B: 始终不换行 */
-  white-space: nowrap;
-  
-  /* 几何约束 C: 宽度控制 */
-  transform: scaleX(0.75); 
-  transform-origin: center top; 
-  
-  opacity: 0.85; 
-  letter-spacing: 0px;
-
-  /* 【修复点 3】双重保险：自身外边距自动居中 */
-  margin-left: auto;
-  margin-right: auto;
+  font-size: 2rem;
 }
+
 
 /* =========================================
    4. 通用工具类 & 导航栏微调
    ========================================= */
 
 .navbar__title {
-  font-family: 'FZBiaoYTFamily', serif;
-  font-weight: normal !important;
+  font-family: 'CMSFont', serif;
+  font-weight: bold !important;
   letter-spacing: 0.04em;
   font-size: 1.3rem;
 }
 
 .title-font {
-  font-family: 'FZBiaoYTFamily', serif;
-  font-weight: normal !important;
+  font-family: 'CMSFont', serif;
+  font-weight: bold !important;
 }
 
 .subtitle-font {
@@ -194,7 +192,8 @@ img.emoji {
   */
 
 
-/* 2. 针对可能被渲染成列表的 Footer Links（如果是官方 links 数组配置的） *//*
+/* 2. 针对可能被渲染成列表的 Footer Links（如果是官方 links 数组配置的） */
+/*
 .footer__bottom .footer__links .footer__item {
   margin: 0 !important;
   padding: 0 !important;

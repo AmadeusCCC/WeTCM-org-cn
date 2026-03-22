@@ -21,7 +21,7 @@ function HomepageHeader() {
         
         {/* 2. 拉丁副标题：应用 .subtitle-font (思源宋体) */}
         <p className={clsx('hero__subtitle', 'subtitle-font')}>
-          WeTCM
+          Royal Medical Academy
         </p>
         
         {/* modification end */}
