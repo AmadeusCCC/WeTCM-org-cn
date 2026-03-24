@@ -1,6 +1,6 @@
 ---
 slug: 2026-01-29-how-to-sleep-well-in-winter-TCM
-title: 🌐 Learning from Traditional Chinese Medicine: How to Sleep Most Nourishingly in Winter
+title: "🌐 Learning from Traditional Chinese Medicine: How to Sleep Most Nourishingly in Winter"
 authors: Swen
 tags: [repost,sleep]
 date: 2026-01-29

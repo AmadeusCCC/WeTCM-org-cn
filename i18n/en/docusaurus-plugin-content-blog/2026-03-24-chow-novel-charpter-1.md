@@ -1,6 +1,6 @@
 ---
 slug: yayan's-fiction-1-1
-title: Untitled Novel, Chapter One: The Youth at the Drawing Spirit Terrace Hides a Strange Dream; The Wanderer on the Wrong Path Home Brings Good News
+title: "Untitled Novel, Chapter One: The Youth at the Drawing Spirit Terrace Hides a Strange Dream; The Wanderer on the Wrong Path Home Brings Good News"
 authors: yayan
 tags: [ori,fiction]
 date: 2026-03-24

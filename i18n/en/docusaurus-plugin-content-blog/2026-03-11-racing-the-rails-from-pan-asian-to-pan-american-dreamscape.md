@@ -1,6 +1,6 @@
 ---
 slug: racing-the-rails-from-pan-asian-to-pan-american-dreamscape
-title: Racing the Rails: From Pan-Asian to Pan-American Dreamscape 🚄
+title: "Racing the Rails: From Pan-Asian to Pan-American Dreamscape 🚄"
 authors: Swen
 tags: [ori,dream]
 date: 2026-03-10

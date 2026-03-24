@@ -1,6 +1,6 @@
 ---
 slug: chengdu-travelogue-part-1-folklore-and-cuisine
-title: Chengdu Travelogue (Part 1): Folklore and Cuisine
+title: "Chengdu Travelogue (Part 1): Folklore and Cuisine"
 authors: Swen
 tags: [test, ori]
 date: 2026-01-27
