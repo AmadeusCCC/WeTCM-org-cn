@@ -42,3 +42,8 @@ dream:
   label: 梦境
   permalink: /dream
   description: 有关做梦、梦境的内容
+
+beta:
+  label: 测试
+  permalink: /beta
+  description: 测试相关的内容
