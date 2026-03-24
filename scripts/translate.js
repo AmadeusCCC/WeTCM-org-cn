@@ -58,18 +58,34 @@ async function main() {
       const sourcePath = path.join(SOURCE_DIR, file);
       const targetPath = path.join(TARGET_DIR, file);
 
-      // 如果翻译好的文件已经存在，跳过（节省 API 费用）
+      let needsTranslation = true;
+
+      // 【核心升级】：引入时间戳增量对比机制
       if (fs.existsSync(targetPath)) {
-        console.log(`⏭️  已存在，跳过: ${file}`);
-        continue;
+        // 获取中英文文件的详细状态信息
+        const sourceStats = fs.statSync(sourcePath);
+        const targetStats = fs.statSync(targetPath);
+
+        // 对比最后修改时间 (mtimeMs)
+        if (sourceStats.mtimeMs > targetStats.mtimeMs) {
+          console.log(`🔄 检测到中文原稿有更新，准备重新翻译: ${file}`);
+        } else {
+          console.log(`⏭️  内容无更新，跳过: ${file}`);
+          needsTranslation = false;
+        }
+      } else {
+        console.log(`🆕 发现新文件，准备首发翻译: ${file}`);
       }
 
-      const content = fs.readFileSync(sourcePath, 'utf-8');
-      const translatedContent = await translateMarkdown(content, file);
+      // 只有当确认为新文件，或原稿被修改过时，才执行翻译
+      if (needsTranslation) {
+        const content = fs.readFileSync(sourcePath, 'utf-8');
+        const translatedContent = await translateMarkdown(content, file);
 
-      if (translatedContent) {
-        fs.writeFileSync(targetPath, translatedContent, 'utf-8');
-        console.log(`✅ 成功翻译并保存: ${file}`);
+        if (translatedContent) {
+          fs.writeFileSync(targetPath, translatedContent, 'utf-8');
+          console.log(`✅ 成功翻译并更新保存: ${file}`);
+        }
       }
     }
   }
