@@ -2,7 +2,7 @@
 slug: first-blog-post
 title: "[test]First Blog Post"
 authors: [slorber, yangshun]
-tags: [hola, docusaurus]
+tags: [hola, docusaurus,beta]
 ---
 
 Lorem ipsum dolor sit amet...

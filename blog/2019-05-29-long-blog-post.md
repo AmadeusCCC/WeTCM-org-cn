@@ -2,7 +2,7 @@
 slug: long-blog-post
 title: "[test]Long Blog Post"
 authors: yangshun
-tags: [hello, docusaurus]
+tags: [hello, docusaurus,beta]
 ---
 
 This is the summary of a very long blog post,
