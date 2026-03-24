@@ -40,19 +40,26 @@ const config = {
     locales: ['zh-Hans', 'en', 'zh-Hant'], // 加入 zh-Hant (繁体中文)
     localeConfigs: {
       'zh-Hans': {
-        htmlLang: 'zh-CN',
-        path: 'zh-Hans', // 【核心操作】让默认语言也生成在 /zh-Hans/ 目录下，而不是根目录
+        htmlLang: 'zh-Hans',
+        
       },
       'zh-Hant': {
-        htmlLang: 'zh-TW',
+        htmlLang: 'zh-Hant',
         path: 'zh-Hant', // 繁体中文路径
       },
       'en': {
-        htmlLang: 'en-GB',
+        htmlLang: 'en',
         path: 'en', // 英文路径
       },
     },
   },
+
+  scripts: [
+    {
+      src: '/js/lang-router.js',
+      async: false, // 保证在页面渲染前尽早执行
+    },
+  ],
 
   presets: [
     [
