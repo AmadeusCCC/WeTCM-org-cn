@@ -32,7 +32,8 @@ async function translateMarkdown(content, filename) {
 严格遵守以下规则：
 1. 保持 Markdown 格式完全不变（包括代码块、加粗、链接、图片语法等）。
 2. 如果包含顶部的 YAML Front Matter (--- 包围的部分)，只翻译 title 和 description 的值，绝不能修改键名 (如 tags, slug, date 等)。
-3. 只输出翻译后的 Markdown 纯文本，不要包含任何解释性对话，不要把内容包裹在 markdown 代码块语法里。`
+3. 【关键规则】翻译后的 title 和 description 的值，必须使用英文双引号 ("") 强行包裹起来，以防止 YAML 解析错误。例如：title: "Translated Title Here"。
+4. 只输出翻译后的 Markdown 纯文本，不要包含任何解释性对话，绝对不要把最终结果包裹在 \`\`\`markdown 这样的代码块里。`
         },
         {
           role: 'user',
