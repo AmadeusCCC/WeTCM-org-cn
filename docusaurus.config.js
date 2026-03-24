@@ -37,7 +37,12 @@ const config = {
   // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'zh-Hans',
-    locales: ['zh-Hans'],
+    locales: ['zh-Hans', 'en'],
+    localeConfigs: {
+      en: {
+        htmlLang: 'en-GB', // 英文的 HTML 语言标签
+      },
+    },
   },
 
   presets: [
@@ -111,6 +116,11 @@ const config = {
           href: 'https://wiki.wetcm.org.cn',
          label: '百科',   // 可以换成你想要的文字
          position: 'left',
+          },
+
+          {
+        type: 'localeDropdown',
+        position: 'right', // 放在右侧
           },
 
           {

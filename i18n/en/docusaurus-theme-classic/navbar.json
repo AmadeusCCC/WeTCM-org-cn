@@ -1,0 +1,30 @@
+{
+  "title": {
+    "message": "皇家太医院",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "My Site Logo",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.指南": {
+    "message": "指南",
+    "description": "Navbar item with label 指南"
+  },
+  "item.label.博客": {
+    "message": "博客",
+    "description": "Navbar item with label 博客"
+  },
+  "item.label.UTC时间": {
+    "message": "UTC时间",
+    "description": "Navbar item with label UTC时间"
+  },
+  "item.label.百科": {
+    "message": "百科",
+    "description": "Navbar item with label 百科"
+  },
+  "item.label.友情链接": {
+    "message": "友情链接",
+    "description": "Navbar item with label 友情链接"
+  }
+}
