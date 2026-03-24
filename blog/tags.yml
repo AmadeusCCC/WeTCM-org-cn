@@ -25,7 +25,7 @@ ori:
 
 repost:
   label: 转载
-  permalink: /erpost
+  permalink: /repost
   description: 来自其他文章/作者的文章
 
 sleep:
