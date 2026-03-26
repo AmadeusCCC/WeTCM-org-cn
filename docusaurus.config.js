@@ -34,32 +34,16 @@ const config = {
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
+  // may want to replace "en" with "zh-Hans'.
   i18n: {
     defaultLocale: 'zh-Hans',
-    locales: ['zh-Hans', 'en', 'zh-Hant'], // 加入 zh-Hant (繁体中文)
+    locales: ['zh-Hans'],
     localeConfigs: {
       'zh-Hans': {
         htmlLang: 'zh-Hans',
-        
-      },
-      'zh-Hant': {
-        htmlLang: 'zh-Hant',
-        path: 'zh-Hant', // 繁体中文路径
-      },
-      'en': {
-        htmlLang: 'en',
-        path: 'en', // 英文路径
       },
     },
   },
-
-  scripts: [
-    {
-      src: '/js/lang-router.js',
-      async: false, // 保证在页面渲染前尽早执行
-    },
-  ],
 
   presets: [
     [
@@ -73,27 +57,35 @@ const config = {
           editUrl:
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
-        blog: {
-          showReadingTime: true,
-          blogSidebarCount: 'ALL',
-          blogSidebarTitle: '所有文章',
-          feedOptions: {
-            type: ['rss', 'atom'],
-            xslt: true,
-          },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-          // Useful options to enforce blogging best practices
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
-        },
+        blog: false, // 禁用默认博客，使用下面的插件配置
         theme: {
           customCss: './src/css/custom.css',
         },
       }),
+    ],
+  ],
+
+  plugins: [
+    // 主博客（正常博客）
+    [
+      '@docusaurus/plugin-content-blog',
+      {
+        id: 'blog', // 默认博客
+        path: 'blog',
+        routeBasePath: 'blog',
+        showReadingTime: true,
+        blogSidebarCount: 'ALL',
+        blogSidebarTitle: '所有文章',
+        feedOptions: {
+          type: ['rss', 'atom'],
+          xslt: true,
+        },
+        editUrl:
+          'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+        onInlineTags: 'warn',
+        onInlineAuthors: 'warn',
+        onUntruncatedBlogPosts: 'warn',
+      },
     ],
   ],
 
@@ -122,6 +114,7 @@ const config = {
           },
 
           {to: '/blog', label: '博客', position: 'left'},
+          {to: '/docs/novel/intro', label: '文学', position: 'left'},
           {
             to: '/time',      // 对应 src/pages/about.md 的文件名
             label: 'UTC时间',  // 导航栏上显示的文字，您可以随意修改
@@ -129,14 +122,9 @@ const config = {
           },
 
           {
-          href: 'https://wiki.wetcm.org.cn',
-         label: '百科',   // 可以换成你想要的文字
-         position: 'left',
-          },
-
-          {
-        type: 'localeDropdown',
-        position: 'right', // 放在右侧
+            href: 'https://wiki.wetcm.org.cn',
+            label: '百科',
+            position: 'left',
           },
 
           {
@@ -217,7 +205,7 @@ const config = {
             苏ICP备2024061225号-2
           </a>
           <img src="/img/Police.svg" alt="公安备案标志" style="width:18px;height:18px;margin-right:2px;margin-left:8px;vertical-align: -3px"/>
-          <a href="https://beian.mps.gov.cn/#/query/webSearch?code=32050902103224" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">
+          <a href="https://beian.miit.gov.cn/#/query/webSearch?code=32050902103224" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">
             苏公网安备32050902103224号
           </a>
           <br>
